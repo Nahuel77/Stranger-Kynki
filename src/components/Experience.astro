@@ -1,0 +1,129 @@
+<div class="expcontent">
+  <div class="titlecontainer">
+    <h3 class="exptitle">Exclusive and unique experiences</h3>
+  </div>
+  <div class="expgallery">
+    <div class="galleryimg">
+      <div class="gallerycase">
+        <img class="img" src="../../public/g01.jpg" alt="" />
+      </div>
+      <div class="gallerycase">
+        <h3>Private Parties</h3>
+        <p>
+          Elegant, intimate, and personalized moments for those who seek the
+          extraordinary.
+        </p>
+        <span class="more">Explore more ➤</span>
+      </div>
+    </div>
+    <div class="galleryimg">
+      <div class="gallerycase">
+        <img class="img" src="../../public/g02.jpg" alt="" />
+      </div>
+      <div class="gallerycase">
+        <h3>Themed Events</h3>
+        <p>
+          Original concepts that awaken the imagination and create unique
+          worlds.
+        </p>
+        <span class="more">Explore more ➤</span>
+      </div>
+    </div>
+    <div class="galleryimg">
+      <div class="gallerycase">
+        <img class="img" src="../../public/g03.jpg" alt="" />
+      </div>
+      <div class="gallerycase">
+        <h3>Elite Performances</h3>
+        <p>
+          Art, mystery, and emotion in performances that elevate your event to
+          another level.
+        </p>
+        <span class="more">Explore more ➤</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .expcontent {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 2px solid rgb(66, 48, 5);
+  }
+
+  .titlecontainer {
+  }
+
+  .exptitle {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-gold);
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .exptitle::before,
+  .exptitle::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4af37);
+  }
+
+  .exptitle::after {
+    background: linear-gradient(to left, transparent, #d4af37);
+  }
+
+  .expgallery {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 2rem;
+  }
+
+  .galleryimg {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(66, 48, 5);
+    margin: 0 1rem;
+  }
+
+  .gallerycase {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallerycase p,
+  span,
+  h3 {
+    padding: 0.2rem;
+  }
+
+  .gallerycase p {
+    color: var(--color-white);
+    font-size: 1.2rem;
+  }
+
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 60%;
+  }
+
+  .more {
+    color: var(--color-red);
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+</style>

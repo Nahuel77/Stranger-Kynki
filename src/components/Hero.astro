@@ -1,0 +1,88 @@
+<div class="hero">
+  <div class="herocontent">
+    <h2 class="pretitle">Luxury & mistery events</h2>
+    <span style="color: #870900;">◆</span>
+    <h1 class="hero-title">Stranger Kynki</h1>
+    <div style="padding: 1rem;">
+      <p class="banner">We create experiences</p>
+      <p class="banner">that become legends</p>
+    </div>
+    <p class="banneralt">
+      We design unique, sophisticated events filled with mystery.
+    </p>
+    <p class="banneralt">
+      Where every detail matters and every moment lingers.
+    </p>
+    <button class="herobtn"
+      ><span class="dot">◇</span>Discover the extraordinary<span class="dot"
+        >◇</span
+      ></button
+    >
+  </div>
+
+  <style>
+    .hero {
+      padding: 3rem;
+      background-image: url("../../public/herobg.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right center;
+      text-align: center;
+      justify-items: start;
+      border-bottom: 2px solid rgb(66, 48, 5);
+    }
+
+    .herocontent {
+      /* background-color: rgb(215, 195, 160, 0.01); */
+    }
+
+    .pretitle {
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    .pretitle::before,
+    .pretitle::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #d4af37);
+    }
+
+    .pretitle::after {
+      background: linear-gradient(to left, transparent, #d4af37);
+    }
+
+    .hero-title {
+      font-size: 6rem;
+    }
+
+    .banner {
+      font-size: 1.2em;
+      text-transform: uppercase;
+    }
+
+    .banneralt {
+      color: var(--color-white);
+      font-size: 1.2rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .herobtn {
+      padding: 1rem 0;
+      margin: 1rem;
+      border: 1px solid rgb(235, 194, 91);
+      border-radius: 5px;
+    }
+
+    .dot {
+      margin: 0 1.5rem;
+    }
+  </style>
+</div>
