@@ -44,6 +44,11 @@ p{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+a{
+    color: var(--color-gold);
+    text-decoration: none;
+}
+
 @font-face {
   font-family: "Bick";
   src: url("/src/assets/fonts/Edwardian\ Script\ ITC\ Regular.ttf") format("truetype");

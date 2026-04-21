@@ -1,8 +1,5 @@
 ---
 import Navbar from "../components/Navbar.astro";
-import Hero from "../components/Hero.astro";
-import Experience from "../components/Experience.astro";
-import About from "../components/About.astro";
 import Foot from "../components/Foot.astro";
 ---
 
@@ -11,16 +8,15 @@ import Foot from "../components/Foot.astro";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="generator" content={Astro.generator} />
     <title>Stranger Kynki</title>
   </head>
   <body>
     <Navbar />
-    <Hero />
-    <Experience />
-    <About />
+
+    <main>
+      <slot />
+    </main>
+
     <Foot />
   </body>
 </html>
