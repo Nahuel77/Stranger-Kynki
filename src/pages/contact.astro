@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout>
+  <div class="contactcontent">
+    <h2>Contact</h2>
+    <p>
+      For private access, partnerships or bespoke experiences, contact us
+      directly. All inquiries are reviewed with discretion.
+    </p>
+  </div>
+</Layout>
+
+<style>
+  .contactcontent {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    padding: 3rem;
+  }
+  .contactcontent h2 {
+    padding: 3rem;
+  }
+  .contactcontent p {
+    width: 70%;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 768px) {
+    .contactcontent p {
+      width: auto;
+    }
+  }
+</style>

@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout>
+  <div class="eventscontent">
+    <h2>Service</h2>
+    <p>
+      Our events are private, curated and intentionally limited. Each experience
+      is designed to operate beyond entertainment, creating environments of
+      immersion, tension and desire. Access is not open. It is defined.
+    </p>
+  </div>
+</Layout>
+
+<style>
+  .eventscontent {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    padding: 3rem;
+  }
+  .eventscontent h2 {
+    padding: 3rem;
+  }
+  .eventscontent p {
+    width: 70%;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 768px) {
+    .eventscontent p {
+      width: auto;
+    }
+  }
+</style>

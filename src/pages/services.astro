@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout>
+  <div class="servicescontent">
+    <h2>Services</h2>
+    <p>
+      Creative direction, concept development and full experience design. We
+      structure proprietary events from strategy to execution, ensuring control
+      over narrative, audience and environment. Each project is built as a
+      system, not a production.
+    </p>
+  </div>
+</Layout>
+<style>
+  .servicescontent {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    padding: 3rem;
+  }
+  .servicescontent h2 {
+    padding: 3rem;
+  }
+  .servicescontent p {
+    width: 70%;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 768px) {
+    .servicescontent p {
+      width: auto;
+    }
+  }
+</style>

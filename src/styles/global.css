@@ -10,6 +10,20 @@
     margin: 0;
 }
 
+@font-face {
+font-family: "Bick";
+src: url("/src/assets/fonts/Edwardian\ Script\ ITC\ Regular.ttf") format("truetype");
+font-weight: 800;
+font-style: normal;
+}
+
+@font-face {
+    font-family: "playfull";
+    src: url("/src/assets/fonts/PlayfairDisplay.ttf");
+    font-weight: 500;
+}
+
+
 body{
     background-color: black;
     overflow-x: hidden;
@@ -41,17 +55,15 @@ h2, h3, h4{
 
 p{
     color: var(--color-gold);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: playfull;
 }
 
 a{
     color: var(--color-gold);
     text-decoration: none;
+    font-family: playfull;
 }
 
-@font-face {
-  font-family: "Bick";
-  src: url("/src/assets/fonts/Edwardian\ Script\ ITC\ Regular.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
+span{
+    font-family: playfull;
 }

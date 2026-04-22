@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+---
+
+<Layout>
+  <div class="luxurycontent">
+    <h2>Luxury</h2>
+    <p>
+      Luxury is not decoration. It is precision. Every detail is intentionally
+      designed to elevate perception, from material choices to timing, from
+      sound to silence. Nothing is excessive. Everything is exact. We create
+      environments where excellence is felt before it is seen.
+    </p>
+  </div>
+</Layout>
+<style>
+  .luxurycontent {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    padding: 3rem;
+  }
+  .luxurycontent h2 {
+    padding: 3rem;
+  }
+  .luxurycontent p {
+    width: 70%;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 768px) {
+    .luxurycontent p {
+      width: auto;
+    }
+  }
+</style>

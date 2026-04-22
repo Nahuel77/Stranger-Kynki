@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import "../styles/global.css";
+---
+
+--- import Layout from "../layouts/Layout.astro" ---
+
+<Layout>
+  <div class="aboutcontent">
+    <h2>About</h2>
+    <p>
+      Founded by Giselle Said, creator of Stranger Kynki, the company is built
+      on more than two decades of experience in creative direction, production
+      and cultural curation, with projects for global brands such as Heineken,
+      Netflix, Adidas, Coca-Cola, Nike and Red Bull, alongside international
+      work with agencies across Argentina, Chile, Peru and Mexico.
+    </p>
+    <p>
+      We create proprietary events through a sensory logic where sound, light,
+      rhythm, flow and behavior operate as a unified system. Our work does not
+      replicate existing models. It establishes new territories.
+    </p>
+  </div>
+</Layout>
+
+<style>
+  .aboutcontent {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    /* height: 100vh; */
+    padding: 3rem;
+  }
+  .aboutcontent h2 {
+    padding: 3rem;
+  }
+  .aboutcontent p {
+    width: 70%;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 768px) {
+    .aboutcontent p {
+      width: auto;
+    }
+  }
+</style>
