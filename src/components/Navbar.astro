@@ -3,7 +3,7 @@
 ---
 
 <nav>
-  <h1>Stranger Kynki</h1>
+  <h1 class="navtitle">Stranger Kynki</h1>
 
   <button class="menu-toggle" aria-label="Abrir menú"> ☰ </button>
 
@@ -44,6 +44,12 @@
     align-items: center;
     border-bottom: 2px solid rgb(66, 48, 5);
     padding: 1rem;
+    justify-content: space-around;
+  }
+
+  .navtitle {
+    font-size: 2rem;
+    text-align: center;
   }
 
   .nav-menu {
@@ -72,7 +78,7 @@
 
   /* MOBILE */
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .menu-toggle {
       display: block;
     }
